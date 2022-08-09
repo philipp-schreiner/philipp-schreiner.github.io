@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philipp Schreiner</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/dict.js"></script>
+    <script type="text/javascript" src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <button type="button" id="navbar-button" menu-expanded="false">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </button>
+        <div id="navigation">
+            <a href="index.html#">Home</a>
+
+            <a href="index.html#theses" lang="en">Theses</a> 
+            <a href="index.html#theses" lang="de" style="display: none;">
+                Arbeiten
+            </a> 
+            <a href="index.html#talks" lang="en">Talks</a>
+            <a href="index.html#talks" lang="de" style="display: none;">
+                Vorträge
+            </a>
+            <a href="index.html#projects" lang="en">Projects</a>
+            <a href="index.html#projects" lang="de" style="display: none;">
+                Projekte
+            </a>
+            <a href="html/CV.html" lang="en">CV</a>
+            <a href="html/CV.html" lang="de" style="display: none;">
+                Lebenslauf
+            </a>
+        </div>
+        <button id="lang-button" onclick="changeLang()"
+                title="Zur deutschen Version wechseln">
+                <i class="fa fa-globe"></i>
+        </button>
+    </header>
+    <div id="content">
+        <div id="sidebar">
+            <img class="portrait" src="images/portrait.jpg">
+                <h2>Philipp Schreiner</h2>
+                <h3 lang="en">Physics Student<br>University of Graz</h3>
+                <h3 lang="de" style="display: none;">
+                    Physik Student<br>Universität Graz
+                </h3>
+                <div style="font-weight: normal; margin-top: 20px;" lang="en">Contact:</div>
+                <div style="font-weight: normal; margin-top: 20px; display: none;" lang="de">Kontakt:</div>
+                <div style="margin-top: 10px; margin-bottom: 20px;">
+                    <a href="https://twitter.com/phschreiner_" class="link_field">Twitter</a>
+                    <a href="mailto:ph.schreiner@edu.uni-graz.at" class="link_field">Mail</a>
+                    <a href="https://github.com/philipp-schreiner" class="link_field">GitHub</a>
+                </div>
+        </div>
+        <div id="main">
+            <div id="aboutme">
+                <p lang="en" style="margin-top: 40px;">Welcome! I'm a Physics student in <span style="font-weight: normal;">Graz</span> (Austria) currently finishing my Master's in the area of <span style="font-weight: normal;">Theoretical Particle Physics</span>. This webpage serves as a collection of theses, projects I worked on with other students throughout my Master's and talks given at various occasions. A few words on my education and interests are given below, some more information about myself can be found in (the condensed version of) my <a href="html/CV.html">Curriculum Vitae</a>.</p>
+                <p lang="de" style="margin-top: 40px; display: none;">Willkommen! Ich bin Physikstudent in <span style="font-weight: normal;">Graz</span> (Österreich) und kurz davor, mein Masterstudium im Feld der <span style="font-weight: normal;">theoretischen Teilchenphysik</span> abzuschließen. Diese Website fungiert als Sammlung für Abschlussarbeiten, Projekte, an denen ich mit anderen Studierenden im Laufe meines Masterstudiums gearbeitet habe, und von mir gehaltene Vorträge. Ein paar Worte zu meiner Ausbildung und meinen Interessen findet ihr unten, mehr Details in meinem <a href="html/CV.html">Lebenslauf</a> (gekürzte Version).
+                </p>
+
+                <h1 lang="en">About me</h1>
+                <h1 lang="de" style="display: none;">Über mich</h1>
+                
+                <p lang="en"><span style="font-weight: normal;">Studies:</span> I started studying Physics in Graz in 2016 and I immediately realized that I picked the right subject for me as I kept getting amazed and reassured that this was my passion. In my third year I got offered a job as a teaching assistant which dragged me into my soon-to-be second passion: Sharing and passing on my excitement to other students. Throughout the rest of my studies I taught undergrad students concepts in Maths, Physics and Scientific Programming.</p>
+                <p lang="en">After finishing my Bachelor's I took a few months off from Physics and attended some Maths courses to further strengthen my mathematical basis before continuing with my Master's in Theoretical Physics. It soon became apparent that the area of Particle Physics fascinated me in particular and I started attending courses, working on projects (some of which you can find below) and eventually also my Master's Thesis in that field.</p>
+                <p lang="en"><span style="font-weight: normal;">Interests:</span> Throughout my Master's I mostly worked on topics covering <span style="font-weight: normal;">Quantum Field Theories</span> within and beyond the Standard Model of Particle Physics (with an emphasize on <span style="font-weight: normal;">non-perturbative</span> techniques) and also <span style="font-weight: normal;">General Relativity</span>. Just listing those two wouldn't really do my interests justice, though, because my fascination for Physics isn't really about a particular theory but rather the methods used to describe them as well as the <span style="font-weight: normal;">theoretical aspects and structural insight</span> that can be gained. The most exciting thing to me is when this abstraction eventually helps to draw connections between seemingly different areas of Physics.</p>
+
+                <p lang="de" style="display: none;"><span style="font-weight: normal;">Ausbildung:</span> Im Herbst 2016 begann ich mein Physikstudium in Graz und war sofort davon überzeugt, die richtige Wahl getroffen zu haben, denn die Begeisterung wuchs mit jeder Woche und ich wurde laufend darin bestätigt, dass Physik meine Leidenschaft ist. Im dritten Studienjahr wurde mir eine Stelle als Studienassistent angeboten, in der ich erstmals meine Freude für Physik an andere Studierende weitergeben konnte und wodurch ich schließlich meine Liebe zur Lehre entdeckte. Seither habe ich Studierende in diversen Mathematik-, Physik- und Programmier-Lehrveranstaltungen betreut.</p>
+                <p lang="de" style="display: none;">Nachdem ich mein Bachelorstudium abgeschlossen hatte, entschied ich mich, mein mathematisches Fundament weiter zu festigen, und belegte ein Jahr lang Kurse aus dem Mathematikstudium. Anschließend setzte ich mein Physikstudium im Master fort und merkte schnell, dass mich der Bereich der theoretischen Teilchenphysik besonders interessierte. Ich begann, mich mit Lehrveranstaltungen und Projektarbeiten (einige davon sind unten gelistet) entsprechend zu vertiefen und wählte schließlich auch ein teilchenphysikalisches Thema für meine Masterarbeit.</p>
+                <p lang="de" style="display: none;"><span style="font-weight: normal;">Interessen: </span>Während meines Masterstudiums beschäftigte ich mich vorwiegend mit <span style="font-weight: normal;">Quantenfeldtheorien</span> im und jenseits des Standardmodells der Teilchenphysik (mit Fokus auf <span style="font-weight: normal;">nicht-perturbativen</span> Methoden) und auch der <span style="font-weight: normal;">allgemeinen Relativitätstheorie</span>. Diese lediglich aufzuzählen ist jedoch nicht die ganze Geschichte: Mir geht es nicht so sehr um irgendwelche speziellen Theorien, sondern mich begeistern vor allem die Methoden, die zu deren Beschreibung zum Einsatz kommen, und <span style="font-weight: normal;">theoretische sowie strukturelle Einsichten</span> in die Problemstellung. Die spannendsten Momente sind für mich jene, bei denen man nach ausreichender Abstraktion schlussendlich Verbindungen zwischen scheinbar komplett unterschiedlichen Gebieten der Physik herstellen kann.</p>
+            </div>
+            <div id="theses" style="margin-bottom: 20px;">
+                <h1 lang="en">Theses</h1>
+                <h1 lang="de" style="display: none;">Abschlussarbeiten</h1>
+            </div>
+            <div id="talks" style="margin-bottom: 20px;">
+                <h1 lang="en">Talks</h1>
+                <h1 lang="de" style="display: none;">Vorträge</h1>
+            </div>
+            <div id="projects" style="margin-bottom: 20px;">
+                <h1 lang="en">Student Projects</h1>
+                <h1 lang="de" style="display: none;">Projektarbeiten</h1>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
