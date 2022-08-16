@@ -16,7 +16,7 @@ var data = [
     {
         "category": "talks",
         "title": {"en": "The Fröhlich-Morchio-Strocchi mechanism in the Minimal Supersymmetric Standard Model", "de": "Der Fröhlich-Morchio-Strocci Mechanismus im Minimal Supersymmetrischen Standardmodell"},
-        "description": {"en": "[Master Seminar at University of Graz] In this talk I presented first results on that topic of my Master's Thesis for the MSSM weak-Higgs-sector.", "de": "[Master Seminar, UNI Graz] In diesem Vortrag präsentiere ich die ersten Resultate meiner Masterarbeit, die den MSSM weak-Higgs Sektor betreffen."},
+        "description": {"en": "[Master Seminar at University of Graz] In this talk I present first results on the topic of my Master's Thesis for the MSSM weak-Higgs-sector. After repeating some concepts of supersymmetric theories from my previous talk, I explain how the FMS mechanism works in the SM and how the custodial symmetry plays a major role in it. Afterwards, I discuss how these concepts can be translated to the MSSM.", "de": "[Master Seminar, UNI Graz] In diesem Vortrag präsentiere ich die ersten Resultate meiner Masterarbeit, die den MSSM weak-Higgs Sektor betreffen. Nach einer kurzen Wiederholung von Konzepten, die für supersymmetrische Theorien wichtig sind, erkläre ich, wie der FMS Mechanismus im SM funktioniert und welche Rolle die Custodial Symmetry dabei spielt. Anschließend zeige ich, wie diese Konzepte auf das MSSM übertragen werden können."},
         "date": {"en": "June 14, 2022", "de": "14. Juni 2022"},
         "source": [{"tag": "slides", "link": "resources/2022_06_14_MSSM_FMS.pdf"}]
     },
