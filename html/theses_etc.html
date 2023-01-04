@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Philipp Schreiner</title>
+    
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="../js/dict_theses_etc.js"></script>
+        <script type="text/javascript" src="../js/scripts.js" defer></script>
+    </head>
+<body>
+    <header>
+        <button type="button" id="navbar-button" menu-expanded="false">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </button>
+        <div id="navigation">
+            <a href="../index.html#">Home</a>
+
+            <a href="theses_etc.html#" lang="en">Theses</a> 
+            <a href="theses_etc.html#" lang="de" style="display: none;">
+                Arbeiten
+            </a> 
+            <a href="theses_etc.html#talks" lang="en">Talks</a>
+            <a href="theses_etc.html#talks" lang="de" style="display: none;">
+                Vorträge
+            </a>
+            <a href="theses_etc.html#projects" lang="en">Projects</a>
+            <a href="theses_etc.html#projects" lang="de" style="display: none;">
+                Projekte
+            </a>
+            <!-- <a href="teaching.html#projects" lang="en">Teaching</a>
+            <a href="teaching.html#projects" lang="de" style="display: none;">
+                Lehre
+            </a> -->
+            <!-- <a href="html/CV.html" lang="en">CV</a>
+            <a href="html/CV.html" lang="de" style="display: none;">
+                Lebenslauf
+            </a> -->
+        </div>
+        <button id="lang-button" onclick="changeLang()"
+                title="Zur deutschen Version wechseln">
+                <i class="fa fa-globe"></i>
+        </button>
+    </header>
+    <div id="content">
+        <div id="sidebar">
+            <img class="portrait" src="../images/portrait.jpg">
+                <h2>Philipp Schreiner</h2>
+                <h3 lang="en">Physics PhD Student<br>at <a href="https://www.oeaw.ac.at/hephy/home" target='_blank'>HEPHY</a></h3>
+                <h3 lang="de" style="display: none;">
+                    Physik Doktoratsstudent<br>am <a href="https://www.oeaw.ac.at/hephy/home" target='_blank'>HEPHY</a>
+                </h3>
+                <div style="font-weight: normal; margin-top: 20px;" lang="en">Contact:</div>
+                <div style="font-weight: normal; margin-top: 20px; display: none;" lang="de">Kontakt:</div>
+                <div style="margin-top: 10px; margin-bottom: 20px;">
+                    <!-- <a href="https://twitter.com/phschreiner_" target="_blank" class="link_field">Twitter</a>
+                    <a href="mailto:ph.schreiner@edu.uni-graz.at" class="link_field">Mail</a>
+                    <a href="https://github.com/philipp-schreiner" target="_blank" class="link_field">GitHub</a> -->
+                    <a href="mailto:ph.schreiner@edu.uni-graz.at" class="contact_link"><i class="fa fa-envelope"></i> ph.schreiner@edu.uni-graz.at</a><br>
+                    <a href="https://twitter.com/phschreiner_" target="_blank" class="contact_link"><i class="fa fa-twitter"></i> @phschreiner_</a><br>
+                    <a href="https://github.com/philipp-schreiner" target="_blank" class="contact_link"><i class="fa fa-github"></i> philipp-schreiner</a>
+                </div>
+        </div>
+        <div id="main">
+            <p lang="en" style="margin-top: 40px;">Below you find my Bachelor's and Master's thesis, slides of talks that I gave in the past, and some student projects I worked on during my Master's.</p>
+            <p lang="de" style="margin-top: 40px; display: none;">Nachfolgend aufgelistet sind meine Bachelor- und Masterarbeit, sowie Folien zu vergangenen Präsentationen und einige Studentenprojekte, die im Laufe meines Masterstudiums entstanden sind.
+            </p>
+
+            <div id="theses" style="margin-bottom: 20px;">
+                <h1 lang="en">Theses</h1>
+                <h1 lang="de" style="display: none;">Abschlussarbeiten</h1>
+            </div>
+            <div id="talks" style="margin-bottom: 20px;">
+                <h1 lang="en">Talks</h1>
+                <h1 lang="de" style="display: none;">Vorträge</h1>
+            </div>
+            <div id="projects" style="margin-bottom: 20px;">
+                <h1 lang="en">Student Projects</h1>
+                <h1 lang="de" style="display: none;">Projektarbeiten</h1>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

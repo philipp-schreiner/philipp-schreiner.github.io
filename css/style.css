@@ -122,6 +122,7 @@ header button:hover {
 a {
     text-decoration: none;
     color: #004a6c;
+    font-weight: bolder;
 }
 
 a:hover {
@@ -148,6 +149,7 @@ a:hover {
 }
 #sidebar {
     text-align: center;
+    flex-shrink: 0;
 }
 
 .portrait {
@@ -224,9 +226,17 @@ a:hover {
     padding-top: 2px;
     margin-left: 4px;
 }
-.link_field:hover {
+/* .link_field:hover {
     color: #8FC1E3;
     border: 2px solid #8FC1E3;
+} */
+.link_field:hover {
+    background-color: #004a6ce2;
+    color: white;
+}
+
+.contact_link {
+    font-size: smaller;
 }
 
 .multicol {

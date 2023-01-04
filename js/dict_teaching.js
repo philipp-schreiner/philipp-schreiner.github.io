@@ -1,0 +1,1 @@
+const resources_folder = "../resources/teaching/"
