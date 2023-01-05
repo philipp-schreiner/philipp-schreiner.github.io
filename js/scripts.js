@@ -54,6 +54,29 @@ if (typeof data !== 'undefined') {
     }
 }
 
+$('.fold input').each(function() {
+    let full_height = $(this).nextAll('p:visible')[0].scrollHeight;
+    let current_height = $(this).nextAll('p:visible').css('height').slice(0, -2);
+
+    if (current_height == full_height) {
+        $(this).css('display','none')
+    }
+});
+
+$('.fold input').click(function() {
+    let full_height = $(this).nextAll('p:visible')[0].scrollHeight;
+    let current_height = $(this).nextAll('p:visible').css('height').slice(0, -2);
+
+    if (current_height < full_height) {
+        $(this).attr('collapsed_height',`${current_height}px`);
+        $(this).nextAll('p:visible').css('max-height',full_height);
+        $(this).css('transform', 'scaleY(-1)');
+    } else {
+        $(this).nextAll('p:visible').css('max-height',$(this).attr('collapsed_height'));
+        $(this).css('transform', 'scaleY(1)');
+    }
+})
+
 if ((sessionStorage.getItem("currentLang") == "de") && ($('[lang="de"]').css("display") == "none")) {
     $('[lang="en"]').toggle();
     $('[lang="de"]').toggle();
@@ -102,8 +125,11 @@ function create_Entry (category, title, description, source, date) {
 
     entry.innerHTML = `<p class="entry_title" lang="en">${title.en}</p>
                         <p class="entry_title" lang="de" style="display: none;">${title.de}</p>
-                        <p lang="en">${description.en}</p>
-                        <p lang="de" style="display: none;">${description.de}</p>
+                        <div class="fold">
+                            <input type="button" value="&#xf107"></input>
+                            <p lang="en" style="display: block;">${description.en}</p>
+                            <p lang="de" style="display: none;">${description.de}</p>
+                        </div>
                         <div style="display: flex; justify-content: space-between;">
                             <p class="detail_text" lang="en">${date.en}</p>
                             <p class="detail_text" lang="de" style="display: none;">${date.de}</p>
